@@ -26,7 +26,7 @@ test = ["pytest>=7"]
 examples = ["imbalanced-learn>=0.10"]
 
 [project.urls]
-Homepage = "https://github.com/ahmadhassanat/resample-audit"
+Homepage = "https://github.com/ahmadhassant/resample-audit"
 
 [project.scripts]
 resample-audit = "resample_audit._cli:main"

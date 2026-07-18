@@ -10,7 +10,7 @@ authors:
 version: 0.1.0
 date-released: 2026-07-19
 license: MIT
-repository-code: "https://github.com/ahmadhassanat/resample-audit"
+repository-code: "https://github.com/ahmadhassant/resample-audit"
 references:
   - type: article
     title: "Stop Oversampling for Class Imbalance Learning: A Review"
