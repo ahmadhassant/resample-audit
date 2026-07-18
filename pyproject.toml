@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resample-audit"
+version = "0.1.0"
+description = "De-biased validity audit (ER_split) and information-gain benchmark for oversamplers / synthetic minority generators"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ahmad Hassanat", email = "ahmad.hassanat@gmail.com" }]
+keywords = ["imbalanced-learning", "SMOTE", "oversampling", "validity",
+            "calibration", "class-imbalance"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["numpy>=1.22", "scikit-learn>=1.1"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+examples = ["imbalanced-learn>=0.10"]
+
+[project.urls]
+Homepage = "https://github.com/ahmadhassanat/resample-audit"
+
+[project.scripts]
+resample-audit = "resample_audit._cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

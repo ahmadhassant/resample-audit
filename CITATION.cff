@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use resample-audit, please cite it."
+title: "resample-audit: de-biased validity and information-gain audit for oversamplers"
+type: software
+authors:
+  - family-names: Hassanat
+    given-names: Ahmad B.
+    email: ahmad.hassanat@gmail.com
+    affiliation: "Mutah University"
+version: 0.1.0
+date-released: 2026-07-19
+license: MIT
+repository-code: "https://github.com/ahmadhassanat/resample-audit"
+references:
+  - type: article
+    title: "Stop Oversampling for Class Imbalance Learning: A Review"
+    authors:
+      - family-names: Tarawneh
+        given-names: Ahmad S.
+      - family-names: Hassanat
+        given-names: Ahmad B.
+      - family-names: Altarawneh
+        given-names: Ghada A.
+    journal: "IEEE Access"
+    year: 2022
