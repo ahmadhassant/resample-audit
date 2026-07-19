@@ -1,5 +1,9 @@
 # resample-audit
 
+[![PyPI](https://img.shields.io/pypi/v/resample-audit.svg)](https://pypi.org/project/resample-audit/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21444931.svg)](https://doi.org/10.5281/zenodo.21444931)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 De-biased validity audit and information-gain benchmark for oversamplers and
 synthetic minority generators (SMOTE and its ~100 variants, GAN/VAE/diffusion
 tabular generators, or anything exposing `fit_resample(X, y)`).
@@ -60,6 +64,11 @@ resample-audit data.csv --no-benchmark --json
 CSV = numeric features + a label column (default: last; minority = rarer
 value unless `--minority-label` is given).
 
+A full walkthrough (one-line audit, reading the report, comparing resamplers,
+the overlap-vs-separable horns, auditing your own generator) is in
+[`examples/tutorial.ipynb`](examples/tutorial.ipynb) — regenerate it with
+`python examples/build_tutorial.py`.
+
 ## What the numbers mean
 
 - `ER_naive` — share of synthetic points whose nearest real neighbour is
@@ -79,6 +88,10 @@ Distance metric defaults to Hassanat (scale-free, the paper's instrument);
 `metric="euclidean"` is faster on large data.
 
 ## Cite
+
+Software: Hassanat, A. B. (2026). *resample-audit: de-biased validity and
+information-gain audit for oversamplers* (v0.1.0). Zenodo.
+https://doi.org/10.5281/zenodo.21444931
 
 Paper in preparation ("Stop oversampling: a validity theory and a de-biased
 test", 2026). Earlier instruments: Tarawneh, Hassanat & Altarawneh, "Stop
