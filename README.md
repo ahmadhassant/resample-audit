@@ -1,7 +1,7 @@
 # resample-audit
 
 [![PyPI](https://img.shields.io/pypi/v/resample-audit.svg)](https://pypi.org/project/resample-audit/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21444931.svg)](https://doi.org/10.5281/zenodo.21444931)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21444930.svg)](https://doi.org/10.5281/zenodo.21444930)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 De-biased validity audit and information-gain benchmark for oversamplers and
@@ -90,8 +90,8 @@ Distance metric defaults to Hassanat (scale-free, the paper's instrument);
 ## Cite
 
 Software: Hassanat, A. B. (2026). *resample-audit: de-biased validity and
-information-gain audit for oversamplers* (v0.1.0). Zenodo.
-https://doi.org/10.5281/zenodo.21444931
+information-gain audit for oversamplers*. Zenodo.
+https://doi.org/10.5281/zenodo.21444930 (concept DOI — resolves to the latest version)
 
 Paper in preparation ("Stop oversampling: a validity theory and a de-biased
 test", 2026). Earlier instruments: Tarawneh, Hassanat & Altarawneh, "Stop

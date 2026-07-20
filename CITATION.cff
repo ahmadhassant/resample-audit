@@ -10,11 +10,11 @@ authors:
 version: 0.1.1
 date-released: 2026-07-21
 license: MIT
-doi: 10.5281/zenodo.21444931
+doi: 10.5281/zenodo.21444930
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.21444931
-    description: Zenodo archive
+    value: 10.5281/zenodo.21444930
+    description: Zenodo concept DOI (all versions; resolves to latest)
 repository-code: "https://github.com/ahmadhassant/resample-audit"
 references:
   - type: article
