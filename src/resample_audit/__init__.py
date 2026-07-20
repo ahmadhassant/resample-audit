@@ -28,7 +28,7 @@ from ._validity import synthetic_minority, validity_audit
 from ._benchmark import benchmark_audit
 from ._report import AuditReport
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __all__ = ["audit", "AuditReport", "validity_audit", "benchmark_audit",
            "synthetic_minority", "nn_is_majority", "wilson_ci",
            "__version__"]
