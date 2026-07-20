@@ -53,6 +53,21 @@ def test_euclidean_metric_close_to_hassanat(overlap_world):
     assert abs(vh["er_split"] - ve["er_split"]) < 0.10
 
 
+def test_manhattan_metric_runs(overlap_world):
+    _, _, Xmin, Xmaj = overlap_world
+    v = validity_audit(InterpolatingOversampler, Xmin, Xmaj, seed=0,
+                       metric="manhattan")
+    assert 0.0 <= v["er_split"] <= 1.0 and v["splits_used"] == 5
+
+
+def test_unknown_metric_raises():
+    from resample_audit import nn_is_majority
+    import numpy as np
+    with pytest.raises(ValueError):
+        nn_is_majority(np.zeros((2, 3)), np.ones((4, 3)),
+                       np.array([0, 1, 0, 1]), metric="cosine")
+
+
 def test_tiny_minority_raises():
     _, _, Xmin, Xmaj = make_world(delta=8.0, n1=8)
     with pytest.raises(ValueError):

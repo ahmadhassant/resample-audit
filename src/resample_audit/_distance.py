@@ -39,8 +39,21 @@ def nn_is_majority(query, refX, refy, metric="hassanat", chunk=None):
             d2 = r2[None, :] - 2.0 * (Q @ refX.T)
             out[s:s + chunk] = (refy[d2.argmin(1)] == 0)
         return out
+    if metric == "manhattan":
+        # L1 argmin, chunked broadcast (matches e.g. SMOTEFUNA's own metric)
+        if chunk is None:
+            chunk = int(np.clip(1e7 // max(1, refX.shape[0] * refX.shape[1]),
+                                2, 128))
+        out = np.empty(len(query), dtype=bool)
+        B = refX[None, :, :]
+        for s in range(0, len(query), chunk):
+            Q = query[s:s + chunk][:, None, :]
+            d = np.abs(Q - B).sum(2)
+            out[s:s + chunk] = (refy[d.argmin(1)] == 0)
+        return out
     if metric != "hassanat":
-        raise ValueError(f"unknown metric {metric!r} (hassanat|euclidean)")
+        raise ValueError(
+            f"unknown metric {metric!r} (hassanat|euclidean|manhattan)")
     nonneg = bool(query.min() >= 0 and refX.min() >= 0)
     if chunk is None:
         chunk = int(np.clip(1e7 // max(1, refX.shape[0] * refX.shape[1]),
