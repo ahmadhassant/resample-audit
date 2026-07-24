@@ -16,6 +16,20 @@ identifiers:
     value: 10.5281/zenodo.21444930
     description: Zenodo concept DOI (all versions; resolves to latest)
 repository-code: "https://github.com/ahmadhassant/resample-audit"
+preferred-citation:
+  type: article
+  title: "Synthetic minority data is redundant or invalid: a data-dependent validity theory and a de-biased test"
+  authors:
+    - family-names: Hassanat
+      given-names: Ahmad B.
+    - family-names: Tarawneh
+      given-names: Ahmad S.
+    - family-names: Altarawneh
+      given-names: Ghada A.
+  year: 2026
+  journal: "arXiv preprint arXiv:2607.20787"
+  doi: 10.48550/arXiv.2607.20787
+  url: "https://arxiv.org/abs/2607.20787"
 references:
   - type: article
     title: "Stop Oversampling for Class Imbalance Learning: A Review"

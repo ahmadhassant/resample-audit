@@ -89,14 +89,29 @@ Distance metric defaults to Hassanat (scale-free, the paper's instrument);
 
 ## Cite
 
-Software: Hassanat, A. B. (2026). *resample-audit: de-biased validity and
-information-gain audit for oversamplers*. Zenodo.
+If you use `resample-audit`, please cite the paper it implements:
+
+Hassanat, A. B., Tarawneh, A. S., & Altarawneh, G. A. (2026). *Synthetic
+minority data is redundant or invalid: a data-dependent validity theory and a
+de-biased test*. arXiv:2607.20787. https://doi.org/10.48550/arXiv.2607.20787
+
+```bibtex
+@article{hassanat2026synthetic,
+  author  = {Hassanat, Ahmad B. and Tarawneh, Ahmad S. and Altarawneh, Ghada A.},
+  title   = {Synthetic minority data is redundant or invalid: a data-dependent
+             validity theory and a de-biased test},
+  journal = {arXiv preprint arXiv:2607.20787},
+  year    = {2026},
+  doi     = {10.48550/arXiv.2607.20787}
+}
+```
+
+For the software itself: Hassanat, A. B. (2026). *resample-audit: de-biased
+validity and information-gain audit for oversamplers*. Zenodo.
 https://doi.org/10.5281/zenodo.21444930 (concept DOI — resolves to the latest version)
 
-Paper in preparation ("Stop oversampling: a validity theory and a de-biased
-test", 2026). Earlier instruments: Tarawneh, Hassanat & Altarawneh, "Stop
-Oversampling for Class Imbalance Learning: A Review", IEEE Access 2022;
-Hassanat et al., "The Jeopardy of Learning from Over-Sampled
-Class-Imbalanced Medical Datasets", 2023.
+Earlier instruments: Tarawneh, Hassanat & Altarawneh, "Stop Oversampling for
+Class Imbalance Learning: A Review", IEEE Access 2022; Hassanat et al., "The
+Jeopardy of Learning from Over-Sampled Class-Imbalanced Medical Datasets", 2023.
 
 MIT license.
